@@ -1,0 +1,11 @@
+.page_collection { // Collection on the grouped page
+  margin: $padding auto 0 auto;
+  width: 100%;
+  max-width: 500px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 6px 8px rgba($color7, 0.4);
+  }
+}

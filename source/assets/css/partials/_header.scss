@@ -1,0 +1,111 @@
+$media_header: "min-width:" + $breakpoint1 + ") and (min-height:450px";
+
+.header {
+  z-index: 1; // always on top
+  width: 100%;
+  height: $menu_height;
+  background: $color5;
+  color: white;
+  position: fixed;
+  top: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  @media screen and ($media_header) {
+    height: $menu_height_lg;
+  }
+}
+
+.logo {
+  padding-top: 8px;
+  height: 50px;
+  width: auto;
+  padding-left: 10px;
+
+  @media screen and ($media_header) {
+    padding-left: 40px;
+    height: 78px;
+  }
+}
+
+// Button to open navigation
+.nav_open {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  height: 100%;
+  color: $color8;
+  cursor: pointer;
+  svg { fill: $color8; height: 40px; width: 40px;}
+  .show_lg {
+    display: none;
+    font-size: 24px;
+    padding-right: 10px;
+    align-self: center;
+    @media screen and ($media_header) {
+      display: inline-block;
+    }
+  }
+}
+
+// Hover colours for elements
+nav>a:hover, .closebtn:hover {
+  background-color: $color1;
+  color: $color5;
+  cursor: pointer;
+}
+
+#toggleMe {
+  width: 0;
+}
+#toggleControl:checked ~ #toggleMe {
+  width: 240px;
+}
+
+// Style off-canvas menu
+nav {
+  color: $color8;
+
+  position: fixed; /* Stay in place */
+  top: 0;
+  right: 0;
+  background-color: $color5; /* Dark */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: $menu_height 0 20px 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  a, a:link, a:visited, a:hover {
+    color: $color8;
+    text-decoration: none;
+    line-height: 36px;
+    padding: 12px 15px;
+  }
+
+  a {
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding-left: 40px;
+    &:hover {
+      color: $color5;
+      padding-left: 60px;
+    }
+  }
+
+  // Gotta have a closing button
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 34px;
+    line-height: 1.5;
+    width: $menu_height;
+    height: $menu_height;
+    text-align: center
+  }
+}

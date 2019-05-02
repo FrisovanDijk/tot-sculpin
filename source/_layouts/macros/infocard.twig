@@ -1,0 +1,13 @@
+{% macro make(description, card) %}
+    {%  set arrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                                                height="16"
+                                                                                class="icard_arrow"
+                                                                                style="margin-bottom: -2px;">
+    <circle style="fill:#DCDCDA;" cx="8" cy="8" r="8"/>
+    <polygon style="fill:#E15A5A;" points="8 12.1 8 12.1 4 5.1 12 5.1 "/></svg>' %}
+
+    <span class="icard">
+        <span class='icard_toggle' onclick='infocard(event)'>{{ description }} {{ arrow|raw }}</span>
+        <span class='icard_content'><span>{{ card|raw }}</span></span>
+    </span>
+{% endmacro make %}

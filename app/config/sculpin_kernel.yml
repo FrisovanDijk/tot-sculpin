@@ -1,0 +1,6 @@
+sculpin_content_types:
+    posts:
+        permalink: :year/:filename/
+
+sculpin:
+    ignore: ["**/*.scss", "**/*.css.map"]

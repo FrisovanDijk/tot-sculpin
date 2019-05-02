@@ -1,0 +1,198 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+    
+<meta property="og:site_name" content="Twenty of Time" />
+<meta property="og:title" content="How the EU voted for the free internet" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8000/2019/eurparl-votes/" />
+<meta property="og:image" content="http://localhost:8000assets/site/social-fallback.png" />
+<meta property="og:description" content="It's amazing how they voted." />
+<meta name="description" content="Analysing voting data - It's amazing how they voted.">
+
+<meta property="article:author" content="Friso van Dijk" />
+
+<meta name="twitter:card" content="summary_large_image">
+        
+            <title>How the EU voted for the free internet | Twenty of Time</title>
+    
+            <link rel="stylesheet" href="http://localhost:8000/assets/css/style.css">
+            <style>
+        h1 { font-size:2.25rem; }
+        .subtitle { font-size: 2rem; padding-top: 0;}
+
+        .countries input {
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            margin: 5px;
+        }
+
+        .mepphoto {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .mepphoto img {
+            width: 50px;
+            margin-top: -3px;
+        }
+
+        .mepname {
+            text-transform: capitalize;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .mepvotes {
+            flex: 0 1 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .mepvotes div {
+            width: auto;
+        }
+        /*
+        Max width before this PARTICULAR table gets nasty
+        This query will take effect for any screen smaller than 760px
+        and also iPads specifically.
+        */
+        @media
+        only screen and (max-width: 2500px),
+        (min-device-width: 2500px) and (max-device-width: 2500px) {
+
+            /* Force table to not be like tables anymore */
+            table, tbody, td, tr {
+                display: block;
+            }
+
+            td {
+                position: relative;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    
+            <script src="http://localhost:8000/assets/js/tot.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+    function loadCountry(country, value) {
+        $.getJSON("json/" + country + ".json", function(data){
+            result = parseCountry(data);
+            document.getElementById("result").innerHTML = "<h2>" + country + "</h2>" + result;
+        });
+    }
+
+    function parseCountry(data) {
+        var result = "<table>";
+        for(i=0; i < data.length; i++) {
+            var mep = data[i];
+
+            result += "<tr>";
+            result += "<td class='mepphoto'><img src='https://www.europarl.europa.eu/mepphoto/";
+            result += mep.id;
+            result += ".jpg' alt='" + mep.fullName + "'></td>";
+            result += "<td class='mepname'>" + mep.fullName.toLowerCase() + "</td>";
+            result += "<td class='mepvotes'>";
+            result += "<div>ACTA: " + mep.acta + "</div>";
+            result += "<div>GDPR: " + mep.gdpr + "</div>";
+            result += "<div>Article 13: " + mep.article13 + "</div>";
+            result += "<div>biometrics30: " + mep.biometrics30 + "</div>";
+            result += "<div>biometrics31: " + mep.biometrics31 + "</div>";
+            result += "<div>terrorism: " + mep.terrorism + "</div>";
+            result += "</td>";
+            result += "</tr>";
+        }
+        result += "</table>";
+        return result;
+    }
+</script>
+    </head>
+<body>
+<header class="header">
+            
+<a href="http://localhost:8000/">
+    <img src="http://localhost:8000/assets/site/logo.svg" alt="Twenty of Time logo" class="logo">
+</a>
+
+<label for="toggleControl" class="nav_open" id="toggle2">
+    <span class="show_lg">menu</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+</label>
+<input type="checkbox" id="toggleControl" style="display: none;" autocomplete="off">
+<nav id="toggleMe" class="tot_sideNav">
+    <label for="toggleControl" class="closebtn">&times;</label>
+    <a href="http://localhost:8000/">Home</a>
+    <a href="http://localhost:8000/collections/">Collections</a>
+    <a href="http://localhost:8000/about/">About</a>
+    <a href="#">Search</a>
+</nav>    </header>
+<main>
+        <article class="page">
+        
+                        
+                                        <div class="page_content">
+                            <div class="toppadding"></div>
+                                                    <h1>How the EU voted for the free internet</h1>
+                                            <span class="subtitle">Analysing voting data</span>
+                                    
+                Choose your country
+
+<div class="countries">
+    <input value="Austria" type="button" id="austria" onclick="loadCountry(id, value)">
+    <input value="Belgium" type="button" id="belgium" onclick="loadCountry(id, value)">
+    <input value="Bulgaria" type="button" id="bulgaria" onclick="loadCountry(id, value)">
+    <input value="Croatia" type="button" id="croatia" onclick="loadCountry(id, value)">
+    <input value="Cyprus" type="button" id="cyprus" onclick="loadCountry(id, value)">
+    <input value="Czechia" type="button" id="czechia" onclick="loadCountry(id, value)">
+    <input value="Denmark" type="button" id="denmark" onclick="loadCountry(id, value)">
+    <input value="Estonia" type="button" id="estonia" onclick="loadCountry(id, value)">
+    <input value="Finland" type="button" id="finland" onclick="loadCountry(id, value)">
+    <input value="France" type="button" id="france" onclick="loadCountry(id, value)">
+    <input value="Germany" type="button" id="germany" onclick="loadCountry(id, value)">
+    <input value="Greece" type="button" id="greece" onclick="loadCountry(id, value)">
+    <input value="Hungary" type="button" id="hungary" onclick="loadCountry(id, value)">
+    <input value="Ireland" type="button" id="ireland" onclick="loadCountry(id, value)">
+    <input value="Italy" type="button" id="italy" onclick="loadCountry(id, value)">
+    <input value="Latvia" type="button" id="latvia" onclick="loadCountry(id, value)">
+    <input value="Lithuania" type="button" id="lithuania" onclick="loadCountry(id, value)">
+    <input value="Luxembourg" type="button" id="luxembourg" onclick="loadCountry(id, value)">
+    <input value="Malta" type="button" id="malta" onclick="loadCountry(id, value)">
+    <input value="Netherland" type="button" id="netherlands" onclick="loadCountry(id, value)">
+    <input value="Poland" type="button" id="poland" onclick="loadCountry(id, value)">
+    <input value="Portugal" type="button" id="portugal" onclick="loadCountry(id, value)">
+    <input value="Romania" type="button" id="romania" onclick="loadCountry(id, value)">
+    <input value="Slovakia" type="button" id="slovakia" onclick="loadCountry(id, value)">
+    <input value="Slovenia" type="button" id="slovenia" onclick="loadCountry(id, value)">
+    <input value="Spain" type="button" id="spain" onclick="loadCountry(id, value)">
+    <input value="Sweden" type="button" id="sweden" onclick="loadCountry(id, value)">
+    <input value="United Kingdom" type="button" id="unitedkingdom" onclick="loadCountry(id, value)">
+</div>
+
+<div class="country-votes" id="result">
+    <h2>Click a country to see voting results.</h2>
+</div>
+            </div>
+            </article>
+</main>
+<footer>
+            <div class="footer_content">
+    <a href="http://localhost:8000/atom.xml"><img src="http://localhost:8000/assets/site/feed-icon.png" alt="Subscribe to feed"></a><br/>
+    Twenty of Time by <a href="https://www.frisovandijk.com" TARGET="_blank">Friso van Dijk</a>
+</div>    </footer>
+</body>
+</html>

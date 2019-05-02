@@ -1,0 +1,60 @@
+{% extends "site_skeleton.twig" %}
+
+{#
+    Template for standard blog post
+#}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{# Define the colour styles for the specific post if defined #}
+{% block custom_stylesheet %}
+    <style type="text/css">
+        {% if page.color %}
+        h1, h2 {
+            color: {{ page.color }}
+        }
+
+        blockquote {
+            border-color: {{ page.color }};
+        }
+        {% endif %}
+
+        {% if page.bgimg %}
+            main {
+                background-image: url({{ site.url }}{{ page.url }}/{{ page.bgimg }});
+                background-attachment: fixed
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{# Define the main content block #}
+{% block main %}
+    <article class="page">
+        {% block content_wrapper %}
+
+            {# If defined, place the hero image, otherwise add padding #}
+            {% if page.heroimg %}
+                <img src="{{ page.link }}/{{ page.heroimg }}" class="blogpost_heroimg">
+            {% endif %}
+
+            {# Page content in container #}
+            {% if page.heroimg %}
+                <div class="page_content page_heroimg_true">
+            {% else %}
+                <div class="page_content">
+            {% endif %}
+                <div class="toppadding"></div>
+                {# Post title and subtitle #}
+                {% if page.title is defined %}
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle is defined %}
+                        <span class="subtitle">{{ page.subtitle }}</span>
+                    {% endif %}
+                {% endif %}
+
+                {% block content %}{% endblock %}
+            </div>
+        {% endblock %}
+    </article>
+{% endblock %}

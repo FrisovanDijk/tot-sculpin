@@ -1,0 +1,64 @@
+{#
+A set of macros for neatly generating specific image types.
+
+In template:
+{% import "macros/blogimg.twig" as imagegallery %}
+
+#}
+
+{#
+This macro generates an image galery.
+
+For correct use, follow the setup below.
+
+In template or markdown file, create the array and call the function:
+{% set gallery1 =
+    {
+        "title": "gallery_title",
+        "folder": "assets/20190325_second_post/",
+        "image_list": {
+            "1": {
+                "title": "Targeted ads",
+                "text": "Man targeted by ads",
+                "file": "surveillance_business_model_targeted_ads.png",
+                "alt": "alt text"
+            },
+            "2": {
+                "title": "Metadata",
+                "text": "Metadata being gathered",
+                "file": "surveillance_business_model_metadata.png",
+                "alt": "alt text"
+            }
+        }
+    }
+%}
+
+{{ blogimg.gallery(gallery1) }}
+
+#}
+
+{% macro tabbed_gallery(context, gallery) %}
+    <div class="tabbed_gallery">
+        <div class="tabbed_gallery_labels">
+            {% for image in gallery.image_list %}
+                <button class="tabbed_gallery_label" onclick="openTab(event, '{{ image.alt }}')" {% if loop.first %}id="defaultOpen"{% endif %}>{{ image.alt }}</button>
+            {% endfor %}
+        </div>
+
+        <noscript>This gallery doesn't work without javascript enabled.</noscript>
+        {% for image in gallery.image_list %}
+            <div id="{{ image.alt }}" class="tabbed_gallery_tab">
+                {# Tab content as follows: Image (float left), image title, image text #}
+                <img src="{{ context.site.url }}{{ gallery.folder }}{{ image.file }}" alt="{{ image.alt }}" class="tabbed_gallery_image">
+                <h4 class="tabbed_gallery_imgtitle">{{ image.title }}</h4>
+                {{ image.text|raw }}
+            </div>
+        {% endfor %}
+    </div>
+
+    {% block foot_javascript %}
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    {% endblock %}
+{% endmacro tabbed_gallery %}

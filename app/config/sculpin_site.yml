@@ -1,0 +1,5 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+url: http://localhost:8000
+description: Twenty of Time is a blog by Friso van Dijk. It covers a mix of subjects in the areas of technology, human rights and society.

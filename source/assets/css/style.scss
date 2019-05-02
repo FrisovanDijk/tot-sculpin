@@ -1,0 +1,140 @@
+@import "partials/variables";
+
+@font-face {
+  font-family: "Muli";
+  src: url("../site/Muli-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../site/Oswald-Regular.ttf") format("truetype");
+}
+
+html, body { padding: 0; margin: 0; height: 100%; width: 100%; }
+
+body {
+  font-family: $font_body;
+  overflow-x: hidden;
+  font-size: $font_size_mobile;
+  line-height: $line-height;
+  display: flex; // for sticky footer
+  flex-direction: column; // same
+}
+
+main {
+  flex: 1 0 auto; // for sticky footer
+  margin-top: $menu_height;
+  background-color: $body_bg;
+  padding-bottom: $menu_height;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+// Top padding in case of no hero image
+.toppadding {
+  height: 0.5 * $menu_height;
+}
+
+header {
+  h1, .subtitle {
+    text-align: center;
+  }
+}
+
+h1, h2, h3, h4, .subtitle {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  font-family: $font_headers;
+  font-weight: normal;
+  line-height: 1.15em;
+  padding: 20px 0 10px 0;
+  margin: 0;
+  hyphens: none;
+}
+
+h1 {
+  font-size: $font_size_h1;
+}
+
+h2, .subtitle {
+  font-size: $font_size_h2;
+}
+
+h3 {
+  font-size: $font_size_h3;
+}
+
+.subtitle {
+  padding-bottom: 0.5em;
+}
+
+h4 {
+  font-size: $font_size_h4;
+}
+
+.darklink {
+  color: $color5;
+  font-weight: bold;
+  hyphens: none;
+  text-decoration: underline;
+}
+
+a, a:link, a:visited {
+  @extend .darklink;
+}
+
+// ===== Mobile font size adjustment =====
+@media screen and (max-width: $breakpoint1) {
+  body {
+    font-size: $font_size_mobile;
+  }
+
+  h1, .subtitle {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  h1 { font-size: $font_size_h2 }
+  h2, .subtitle { font-size: $font_size_h3 }
+  h3, h4 { font-size: $font_size_h4 }
+}
+
+// ===== Page default styling =====
+// <article>
+.page {
+}
+
+// Content container div
+.page_content {
+  @extend .blogpost_content;
+  @extend .blogpost_content_lightbg;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-top: 0;
+}
+
+.page_heroimg_true {
+  margin-top: -1em;
+}
+
+// ===== Generic classes =====
+.center {
+  margin: 0 auto;
+}
+
+@import "partials/header";
+@import "partials/blogpost";
+@import "partials/footer";
+@import "partials/page_elements";
+@import "partials/post_preview";
+@import "partials/collections";
+@import "partials/page_preview";
+
+@import "macros/gallery";
+@import "macros/infocard";
+@import "macros/snippet";

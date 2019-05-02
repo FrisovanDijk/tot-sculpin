@@ -1,0 +1,21 @@
+{% macro link(snippet_title, url, title, image, description, target) %}
+    <div class="snippet">
+        <a href="{{ url }}" {{ target ? 'target="_self"': 'target="_blank"' }}>
+        {% if snippet_title != "none" %}
+            <div class="snippet-title">{{ snippet_title }}</div>
+        {% endif %}
+        {% if image and image != "none" %}
+            <figure>
+            <img src="{{ image }}" alt="link image">
+            </figure>
+        {% elseif snippet_title != "none" %}
+            <div class="toppadding"></div>
+        {% endif %}
+        <div class="snippet-inner">
+            <span class="title">{{ title }}</span></a>
+            {% if description and description != "none" %}<p>{{ description|raw|slice(0,199) }}
+                {% if  description|length > 200 %}…{% endif %}
+                <br/><a href="{{ url }}" target="_blank">Read article »</a></p>{% endif %}
+        </div>
+    </div>
+{% endmacro %}

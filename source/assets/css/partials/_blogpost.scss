@@ -1,0 +1,220 @@
+// Hero image for the blog post
+.blogpost_heroimg {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  height: 300px;
+  @media screen and (min-width: $breakpoint2) {
+    height: auto;
+  }
+}
+
+// Content container div
+.blogpost_content {
+  margin: $padding auto 0;
+  width: calc(100% - #{2*$padding});
+  max-width: $post_width;
+  color: #1f0909;
+  hyphens: auto;
+  padding: 1px $padding 30px $padding;
+
+  .intro:first-letter {
+    font-size: 5.2em;
+    float: left;
+    padding-top: 7px;
+    padding-right: 3px;
+    font-family: "Oswald", serif;
+  }
+
+  a, a:link, a:visited, a:hover {
+    color: $color2;
+    font-weight: normal;
+  }
+}
+
+.blogpost_content_lightbg {
+  background-color: $color9;
+  @media screen and (min-width: $breakpoint2) {
+    border-radius: 15px;
+    box-shadow: 6px 8px $color8;
+  }
+}
+
+// ======= Post Metadata =======
+.post_metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  font-size: $font_size_small;
+
+  .post_metadata_block {
+    margin: 0 5px;
+
+    display:flex;
+    align-items: center;
+
+    svg {
+      stroke-width: 0;
+      fill: $color5;
+      height: 18px;
+      width: 18px;
+      padding-right: 4px;
+    }
+  }
+}
+
+// ======= Comment Consent Form ========
+// Consent form for comments
+.consent_form {
+  @extend .blogpost_content;
+  @extend .blogpost_content_lightbg;
+
+  max-width: 620px;
+
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+
+  button {
+    background-color: $color2;
+    color: $color9;
+    padding: 8px 20px;
+    align-self: center;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+#disqus_thread {
+  background: $color9;
+  border-radius: 15px;
+  padding: $padding;
+}
+
+// ======= Social Share Buttons ========
+// Share buttons
+.share_post {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  a {
+    width: auto;
+  }
+}
+
+// Social sharing buttons
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 4px 8px 4px;
+  font-size: 17px;
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0 8px 3px 8px;
+}
+
+.resp-sharing-button__icon svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none;
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none;
+}
+
+.resp-sharing-button--facebook {
+  background-color: #555C5C;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #555C5C;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+}
+
+.resp-sharing-button--google {
+  background-color: #555C5C;
+}
+
+.resp-sharing-button--google:hover,
+.resp-sharing-button--google:active {
+  background-color: #c23321;
+}
+
+.resp-sharing-button--email {
+  background-color: #555C5C;
+}
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #d35400;
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #555C5C;
+}
+
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+}
+
+// ==== Previous/next post ====
+.blog_nextpost {
+  width: 100%;
+  max-width: 800px;
+  margin: $padding auto 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .snippet {
+    background-color: $color9;
+
+    a, a:link, a:visited, a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      color: $color5;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint4) {
+    flex-direction: row;
+    .snippet { margin: 10px; }
+  }
+}

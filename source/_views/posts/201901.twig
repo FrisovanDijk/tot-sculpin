@@ -1,0 +1,22 @@
+{% set gallery1 =
+{
+"folder": "/2019/second-post/",
+"image_list": {
+"1": {
+"title": "Google Chrome",
+"text": "<p>Google Chrome is a browser alternative that works great for <strong>no privacy</strong>.</p>",
+"file": "surveillance_business_model_targeted_ads.png",
+"alt": "Google Chrome"
+},
+"2": {
+"title": "Brave Browser",
+"text": "<p>Brave browser is a privacy alternative built on an innovative payment system. They use the idea of basic attention tokens to allow you to pay in exchange for time spent on a website.</p>
+<p>Basic attention tokens are bought and given to publishers. Alternatively, you are rewarded with tokens for time spent looking at advertisements.</p>",
+"file": "surveillance_business_model_metadata.png",
+"alt": "Brave Browser"
+}
+}
+}
+%}
+
+{{ blogimg.tabbed_gallery(_context, gallery1) }}

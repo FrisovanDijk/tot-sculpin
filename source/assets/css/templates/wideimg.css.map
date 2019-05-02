@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,oCAAkD;EAChD,mBAAoB;IAClB,KAAK,EAAE,GAAG;IACV,OAAO,EAAE,SAAS;;EAEpB,QAAS;IACP,WAAW,EAAE,IAAI;;EAGnB,SAAU;IACR,YAAY,EAAE,IAAI",
+"sources": ["wideimg.scss"],
+"names": [],
+"file": "wideimg.css"
+}

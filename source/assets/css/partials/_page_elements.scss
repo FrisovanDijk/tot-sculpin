@@ -1,0 +1,221 @@
+// ======= Page style elements ========
+
+// Blockquote
+blockquote {
+  border-left: 12px solid $color1;
+  padding: 0.5em 1em;
+  margin: 2.5em 1em 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $color10;
+  border-radius: 1em;
+  font-size: $font_size;
+
+  cite {
+    font-style: normal;
+    font-size: 0.8em;
+  }
+
+  p {
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+}
+
+blockquote:before {
+  color: $color6;
+  content: '“';
+  font-size: 8em;
+  line-height: 0.1em;
+  margin-bottom: -16px;
+  padding-top: 22px;
+}
+
+blockquote.left {
+  float: left;
+  @media screen and (min-width: $breakpoint4) {
+    margin: 1em 1.5em 1em 0;
+  }
+}
+
+blockquote.right {
+  float: right;
+  @media screen and (min-width: $breakpoint4) {
+    margin: 1em 0 1em 1.5em;
+  }
+}
+
+blockquote.right, blockquote.left {
+  @media screen and (min-width: $breakpoint4) {
+    width: 40%;
+    border-radius: 10px;
+    border-left-width: 8px;
+
+    &:before {
+      font-size: 6em;
+      padding-top: 14px;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+// ======= Images ========
+// Styles apply to <figure>
+
+figure {
+  margin: 0;
+
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-style: italic;
+    color: $color6;
+    padding: 0 20px;
+  }
+}
+
+.imgleft, .imgright {
+  width: 100vw;
+
+  // Below large width center image neatly
+  @media screen and (max-width: ($breakpoint4 - 1px)) {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.imgcenter {
+  max-width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+
+// medium+ width
+@media screen and (min-width: $breakpoint4) {
+  .imgleft, .imgright {
+    max-width: 50%;
+    margin: 14px 20px;
+    text-align: center;
+  }
+
+  .imgleft {
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .imgright {
+    float: right;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+// Wide image
+.imgwide {
+  max-width: $wide_img;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  text-align: center;
+  figcaption {
+    width: $post_width;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+// ======= Author Image ========
+// Author image container
+.author_container {
+  width: 120px;
+  margin: 10px 0 0 20px;
+  float: right;
+
+  @media screen and (min-width: $breakpoint1) {
+    max-width: 260px;
+    width: auto;
+
+    .authorimg:nth-child(even) {
+      padding-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: $bp_width_340) {
+    width: 100%;
+    .authorimg:nth-child(even) {
+      padding-left: 10px;
+    }
+  }
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+// Author image block
+.authorimg {
+  width: 120px;
+  font-size: $font_size_small;
+  line-height: $line-height;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    padding-bottom: 4px;
+  }
+
+  .authorname {
+    font-weight: bold;
+  }
+}
+
+// ==== Subscribe Form ====
+.subscribeform_mid {
+  margin: $padding auto 0;
+}
+
+// ==== Email Form ====
+.page_email {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0 0.5*$padding 0;
+  border-radius: 15px;
+
+  input, textarea, button {
+    min-height: 20px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid $color7;
+  }
+
+  button {
+    border: 0;
+    width: 140px;
+    cursor: pointer;
+    &:hover {
+      background-color: $color1;
+      transition: 0.25s;
+    }
+  }
+}

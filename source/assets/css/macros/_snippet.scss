@@ -1,0 +1,70 @@
+.snippet {
+  width: 100%;
+  max-width: 480px;
+  margin: 20px auto;
+  overflow: hidden;
+
+  border-radius: 15px;
+  background-color: $color10;
+
+  position: relative;
+  .snippet-title {
+    background: rgba($color5, 0.75);
+    color: $color9;
+    padding: 8px;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .toppadding {
+    height: 42px;
+  }
+
+  .snippet-inner {
+    padding: 0 20px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.25rem;
+      font-family: $font_headers;
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      margin: 0;
+      hyphens: auto;
+    }
+  }
+
+  figure {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.snippet-inner > {
+  a, a:link, a:visited, a:hover {
+    color: $color5;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  p > {
+    a, a:link, a:visited, a:hover {
+      color: $color5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

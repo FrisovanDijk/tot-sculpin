@@ -1,0 +1,29 @@
+// infocards
+.icard_toggle {
+  padding: 0 2px;
+  svg {
+    width: auto;
+    margin-bottom: -2px;
+  }
+}
+
+.icard_toggle:hover {
+  color: #E15A5A;
+  cursor: pointer;
+}
+
+.icard_content {
+  display: none;
+  background: $color10;
+  margin: 1em;
+  padding: 16px;
+  color: black;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .icard_content {
+    margin: 1em 3em;
+    padding: 24px 36px;
+  }
+}

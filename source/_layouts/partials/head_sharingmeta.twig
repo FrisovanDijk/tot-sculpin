@@ -1,0 +1,32 @@
+{# Fallback for social sharing image and meta description, if no custom is defined #}
+{% set featuredSocialUrl = "{{ site.url }}/assets/featured_fallback.png" %}
+{% set metaDescription = "Twenty of Time is the personal blog of Friso van Dijk. It's the place for engaging, in-depth articles on privacy and various other topics." %}
+
+<meta property="og:site_name" content="Twenty of Time" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% if page.heroimg %}
+<meta property="og:image" content="{{ site.url }}{{ page.url }}social.png" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}assets/site/social-fallback.png" />
+{% endif %}
+{% if page.intro %}
+<meta property="og:description" content="{{ page.intro|raw }}" />
+<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }} - {% endif %}{{ page.intro|raw }}">
+{% else %}
+<meta property="og:description" content="{{ metaDescription|raw }}" />
+<meta name="description" content="{{ metaDescription|raw }}">
+{% endif %}
+
+{# Authors #}
+{% if page.author %}
+{% for author in page.author %}
+<meta property="article:author" content="{{ author.name }}" />
+{% endfor %}
+{% else %}
+<meta property="article:author" content="Friso van Dijk" />
+{% endif %}
+
+{# Platform specific #}
+<meta name="twitter:card" content="summary_large_image">

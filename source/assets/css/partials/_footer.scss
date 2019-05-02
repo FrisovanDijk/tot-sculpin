@@ -1,0 +1,15 @@
+footer {
+  background-color: $color5;
+  height: 200px;
+  color: $color8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+  a, a:hover, a:visited, a:link {
+    color: $color8;
+    font-weight: bold;
+  }
+}

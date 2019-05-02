@@ -1,0 +1,38 @@
+// - Variables
+$color1: #E15A5A;
+$color2: #4696C9;
+$color3: #A2CAE4;
+$color4: #E6BEBE;
+$color5: #282D34;
+$color6: #555C5C;
+$color7: #AEB2B2;
+$color8: #DCDCDA;
+$color9: #fffdfa;
+$color10: #EFEFEF; // E5E4E0
+$body_bg: #EAE8E1;
+
+$font_headers: 'Oswald', sans-serif;
+$font_body: 'Muli', sans-serif;
+$font_size: 16px;
+$font_size_mobile: 16px;
+$font_size_h1: 3rem;
+$font_size_h2: 2.2rem;
+$font_size_h3: 1.5rem;
+$font_size_h4: 1.25rem;
+$font_size_small: 0.875rem;
+
+$line-height: 1.67em;
+
+$menu_height: 48px;
+$menu_height_lg: 56px;
+
+$padding: 32px; // padding besides centered content
+
+$post_width: 720px; // Maximum post content width
+$wide_img: 960px;   // Max width for wide image (wider than content)
+
+$breakpoint1: 600px; // header
+$breakpoint2: 800px; // hero img and centering images
+$breakpoint3: 970px; // breakpoint for extended images
+$breakpoint4: 640px; // second breakpoint for half images
+$bp_width_340: 460px; // mobile small
