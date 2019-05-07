@@ -5,7 +5,7 @@ subtitle: A retrospective of unenforceable legislation
 intro: The European Cookie Law was intended to protect internet users from unbridled tracking. Its aim was to make users more privacy-aware and to make tracking mechanisms explicit. When the law was set in place, the internet braced itself for a European Union ready to flex its muscles. But nothing happened. How come?
 readtime: 10 min
 heroimg: featured.png
-color: "#b39e85"
+color: "#987d5e"
 author:
     1:
         name: "Friso van Dijk"

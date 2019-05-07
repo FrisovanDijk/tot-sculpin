@@ -15,7 +15,7 @@
             <span class="title">{{ title }}</span></a>
             {% if description and description != "none" %}<p>{{ description|raw|slice(0,199) }}
                 {% if  description|length > 200 %}…{% endif %}
-                <br/><a href="{{ url }}" target="_blank">Read article »</a></p>{% endif %}
+                <br/><a href="{{ url }}" {{ target ? 'target="_self"': 'target="_blank"' }}>Read article »</a></p>{% endif %}
         </div>
     </div>
 {% endmacro %}

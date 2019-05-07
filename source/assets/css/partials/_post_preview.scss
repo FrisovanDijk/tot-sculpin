@@ -1,17 +1,28 @@
 .post_preview {
   max-width: 780px;
-  margin: 0 20px 30px 20px;
+  margin: 0 10px 30px;
   border-radius: 15px;
   background: $color9;
   position: relative;
   overflow: hidden;
-  box-shadow: 6px 8px $color8;
+  box-shadow: $box-shadow;
 
   figure {
     position: relative;
     width: 100%;
     overflow: hidden;
     height: auto;
+
+    @media screen and (max-width: $breakpoint4) {
+      height: 250px;
+      img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 
   img {
@@ -37,14 +48,22 @@
   h2 {
     padding-top: 0;
     font-size: 1.8em;
+
+    @media screen and (max-width: $breakpoint1) {
+      font-size: $font_size_h3
+    }
+
     a, a:link, a:visited, a:hover {
       font-weight: normal;
     }
   }
 
   .subtitle {
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 0;
+    @media screen and (max-width: $breakpoint1) {
+      font-size: $font_size_h4;
+    }
   }
 
   p {
@@ -56,8 +75,8 @@
   margin: 0 auto;
   max-width: 320px;
   display: flex;
-  justify-content: space-between;
-  a {
+  justify-content: center;
+  a, .currpage {
     padding: 0 10px;
   }
 }

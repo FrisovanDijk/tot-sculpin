@@ -1,6 +1,6 @@
 .snippet {
   width: 100%;
-  max-width: 480px;
+  max-width: 340px;
   margin: 20px auto;
   overflow: hidden;
 
@@ -8,16 +8,16 @@
   background-color: $color10;
 
   position: relative;
+
+  a, a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
   .snippet-title {
-    background: rgba($color5, 0.75);
+    background: rgba($color5, 0.8);
     color: $color9;
     padding: 8px;
     text-align: center;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
   }
 
   .toppadding {

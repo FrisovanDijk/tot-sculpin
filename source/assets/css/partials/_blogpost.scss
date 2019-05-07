@@ -12,23 +12,28 @@
 // Content container div
 .blogpost_content {
   margin: $padding auto 0;
-  width: calc(100% - #{2*$padding});
+  width: calc(100% - #{$padding});
+  padding: 1px (0.5*$padding) 30px;
   max-width: $post_width;
+  @media screen and (min-width:$bp_width_340) {
+    width: calc(100% - #{2*$padding});
+    padding: 1px ($padding) 30px;
+  }
+
   color: #1f0909;
   hyphens: auto;
-  padding: 1px $padding 30px $padding;
 
-  .intro:first-letter {
-    font-size: 5.2em;
-    float: left;
-    padding-top: 7px;
-    padding-right: 3px;
-    font-family: "Oswald", serif;
+  .intro {
+    font-size: 1.1em;
   }
 
   a, a:link, a:visited, a:hover {
     color: $color2;
     font-weight: normal;
+  }
+
+  ul {
+    max-width: 80%;
   }
 }
 
@@ -36,7 +41,7 @@
   background-color: $color9;
   @media screen and (min-width: $breakpoint2) {
     border-radius: 15px;
-    box-shadow: 6px 8px $color8;
+    box-shadow: $box-shadow;
   }
 }
 

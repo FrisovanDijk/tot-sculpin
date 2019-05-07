@@ -1,0 +1,11 @@
+[{"id":2109,"fullName":"Brian CROWLEY","nationalPoliticalGroup":"Fianna Fáil Party","country":"Ireland","actavote":"none","gdprvote":"good","a13vote":"none","biovote":"none","terrorvote":"none","overall":"neutral"},
+{"id":118658,"fullName":"Brian HAYES","nationalPoliticalGroup":"Fine Gael Party","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"bad","biovote":"bad","terrorvote":"neutral","overall":"bad"},
+{"id":124988,"fullName":"Deirdre CLUNE","nationalPoliticalGroup":"Fine Gael Party","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"none","biovote":"bad","terrorvote":"good","overall":"neutral"},
+{"id":28115,"fullName":"Mairead McGUINNESS","nationalPoliticalGroup":"Fine Gael Party","country":"Ireland","actavote":"neutral","gdprvote":"good","a13vote":"bad","biovote":"bad","terrorvote":"none","overall":"bad"},
+{"id":96668,"fullName":"Seán KELLY","nationalPoliticalGroup":"Fine Gael Party","country":"Ireland","actavote":"neutral","gdprvote":"good","a13vote":"bad","biovote":"bad","terrorvote":"neutral","overall":"bad"},
+{"id":124985,"fullName":"Luke Ming FLANAGAN","nationalPoliticalGroup":"Independent","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"good","biovote":"good","terrorvote":"neutral","overall":"good"},
+{"id":28116,"fullName":"Marian HARKIN","nationalPoliticalGroup":"Independent","country":"Ireland","actavote":"good","gdprvote":"good","a13vote":"bad","biovote":"bad","terrorvote":"bad","overall":"bad"},
+{"id":96603,"fullName":"Nessa CHILDERS","nationalPoliticalGroup":"Independent","country":"Ireland","actavote":"good","gdprvote":"good","a13vote":"good","biovote":"none","terrorvote":"none","overall":"good"},
+{"id":124987,"fullName":"Liadh NÍ RIADA","nationalPoliticalGroup":"Sinn Féin","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"none","biovote":"none","terrorvote":"none","overall":"none"},
+{"id":124984,"fullName":"Lynn BOYLAN","nationalPoliticalGroup":"Sinn Féin","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"good","biovote":"good","terrorvote":"none","overall":"good"},
+{"id":124986,"fullName":"Matt CARTHY","nationalPoliticalGroup":"Sinn Féin","country":"Ireland","actavote":"none","gdprvote":"none","a13vote":"good","biovote":"good","terrorvote":"neutral","overall":"good"}]

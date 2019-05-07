@@ -1,9 +1,9 @@
 ---
 layout: empty
-title: index
+title: Index
 generator: pagination
 pagination:
-    max_per_page: 5
+    max_per_page: 4
 use:
     - posts
 ---
@@ -12,16 +12,16 @@ use:
 
 {% for post in page.pagination.items %}
     <article class="post_preview">
-        {% if post.heroimg|length %}
-            <figure>
-                <img src="{{ site.url }}{{ post.url }}{{ post.heroimg }}">
-            </figure>
+        {% if post.heroimg %}
+            <a href="{{site.url}}{{post.url}}">
+                <figure>
+                    <img src="{{ site.url }}{{ post.url }}{{ post.heroimg }}">
+                </figure>
+            </a>
         {% endif %}
             <div class="post_preview_text">
             <h2>
-                <a href="{{ site.url }}{{ post.url }}" {% if post.color|length %} style="color:{{ post.color }} {% endif %}">
-                    {{ post.title }}
-                </a>
+                <a href="{{ site.url }}{{ post.url }}" {% if post.color|length %} style="color:{{ post.color }} {% endif %}">{% if post.draft %}(draft) {% endif %}{{ post.title }}</a>
             </h2>
             <span class="subtitle">{{ post.subtitle }}</span>
             <p>
@@ -59,7 +59,18 @@ use:
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <div class="pagination">
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}
+        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">previous</a>{% endif %}
+        {% for i in range(-2,2) %}
+            {% if i == 0 %}
+                <span class="currpage">{{ page.pagination.page + i }}</span>
+            {% else %}
+                {% if page.pagination.page + i > 1 and page.pagination.page + i <=   page.pagination.total_pages %}
+                    <a href="{{ site.url }}/page/{{ page.pagination.page + i }}">{{ page.pagination.page + i }}</a>
+                {% elseif page.pagination.page + i == 1 %}
+                    <a href="{{ site.url}}/">1</a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">next</a>{% endif %}
     </div>
 {% endif %}

@@ -1,0 +1,257 @@
+---
+draft: true
+layout: blogpost
+title: EU2019: Which MEPs voted in favour of digital rights?
+subtitle: Analysing voting data of the European Parliament
+intro: With the European elections in two weeks, it's astonishing how little the campaigns talk about digital rights. Just two months ago, thousands of people took to the street to protect them. And 5 million signed an online petition. All in protest of Article 13, to stand up for their digital rights. If the politicians up for election don't talk about them, we can at least look at how they voted.
+readtime: 4 min
+heroimg: "featured.png"
+color: "#003399"
+author:
+    1:
+        name: "Friso van Dijk"
+        img: "frisovandijk2.jpg"
+---
+
+{% block custom_stylesheet %}
+    <link rel="stylesheet" href="{{ site.url }}{{ page.url }}eurparl.css">
+{% endblock %}
+
+{% block content %}
+
+<p><a href="#voting" style="font-weight: bold; text-decoration: underline;">Click here to skip to how each MEP voted</a></p>
+
+<h2>What are we looking at?</h2>
+
+<p>Five impactful issues have been selected for this analysis. For each of them, the public voting records account for each Member of European Parliament (MEP) vote. Two these issues (ACTA and GDPR) happened in the previous term, but cover over 40% of the current sitting politicians.</p>
+
+<figure class="imgcenter">
+    <img src="votes-per-topic.png" alt="Vote distribution per issue">
+</figure>
+
+<p><strong>(2012) ACTA</strong> - The Anti-Counterfeiting Trade Agreement would shift the responsibility of policing copyright from democratic bodies to secret regional negotiations. <a href="https://www.eff.org/issues/acta" target="_blank">It included provisions</a> that would broaden the definition of copyright infringement, raise punishment and undermine online freedoms. Due to heavy protests it became a victory for digital rights.</p>
+<p><strong>(2014) GDPR</strong> - <a href="{{site.url}}/2018/gdpr-impact-eu-privacy-law/" target="_blank">The General Data Protection Legislation</a> is a landmark legislation for the privacy of European residents. While the vote happened at the end of the previous term, it went to effect in 2018 and has had a positive impact for privacy so far.</p>
+<p><strong>(March 2019) Article 13</strong> - The new <a href="{{site.url}}/2019/unjust-technology-legislation-3/" target="_blank">European Copyright Directive</a> was highly controversial due to its inclusion of <em>“content recognition technologies”</em>. It would bring forth even further policing by digital platforms on the content we upload, and not in favour of free speech and fair use. Despite large protests not two months ago, it passed the European Parliament with minor changes in its text, but not its meaning.</p>
+<p><strong>(April 2019) Biometric database</strong> - It was quiet when the European Parliament voted on creating the world’s third largest biometrics database with a clear majority. With no amendments and no extensive debate it has all the signs of a hastily pushed law. With just two votes, MEPs passed a regulation that went straight against the values laid down in the GDPR. And that is <a href="https://www.politico.eu/article/eu-pushes-to-link-tracking-databases/" target="_blank">despite warnings</a> from the European Data Protection Supervisor and the EU’s Fundamental Rights Agency (FRA).</p>
+<p><strong>(April 2019) Terror filters</strong> - In the same week as the biometrics database, there was a vote on whether potentially terrorist content should be aggressively taken down. Once again it passed the European Parliament, ignoring <a href="https://fra.europa.eu/en/opinion/2019/online-terrorism" target="_blank">fundamental objections by the FRA</a>. Due to this vote, online service providers have to take down terrorist content within one hour after being notified, without proper safeguards against government power abuse.</p>
+
+<figure class="imgright">
+    <img src="scoring-meps.png" alt="Scoring per MEP">
+</figure>
+
+<h2>Scoring MEPs</h2>
+
+<p>A simple scoring system was used to identify the MEPs who consistently vote either for or against digital rights. Each vote for digital rights was rewarded with 1 point, whereas a vote against cost 1 point. Scroll to the bottom for a link to the page with my methods and justification.</p>
+
+<h2>How did the MEPs do in general?</h2>
+
+<p>Even though it’s one of the few issues that move people to protests, MEPs on average vote against digital rights. It’s no wonder that, with the elections coming up, many want to subvert this issue in their campaigns. Many only have ground to lose on this front.</p>
+
+<figure class="imgcenter">
+    <img src="distribution-of-meps.png" alt="MEP distribution on digital rights">
+</figure>
+
+<h2>How did each country do?</h2>
+
+<p>The European elections are per country, not per European party. Because we vote on a national scale, we should take a look at how each country did. 10 out of 28 countries have no MEPs who consistently support digital rights. It’s not a great sign when compared to the single country that doesn’t have any against digital rights.</p>
+
+<figure class="imgcenter">
+    <img src="votes-per-country.png" alt="MEP distribution per country">
+</figure>
+
+<h2 id="voting">How did your MEP vote?</h2>
+
+<p>Despite the clear public message, many MEPs voted against digital rights. A vote in the European elections can be a vote of accountability. Select your country below and see how your national candidates voted.</p>
+
+<div class="select-country">
+    <select class="countryselect" id="countryselect">
+        <option value="none" selected="selected">Select country</option>
+        <option value="Austria">Austria</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czechia">Czechia</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Italy">Italy</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Malta">Malta</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Romania">Romania</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Spain">Spain</option>
+        <option value="Sweden">Sweden</option>
+        <option value="unitedkingdom">United Kingdom</option>
+    </select>
+</div>
+
+<p class="votes-instruction">Hover over (or tap) a coloured vote to see what they voted.</p>
+
+<div class="country-votes" id="result">
+    <div class="mep">
+        <p>Voting results of MEPs will appear here.</p>
+    </div>
+</div>
+
+<p>This is my first data-driven post on Twenty of Time. If you like it and want to see more of my work, sign up for my newsletter below.</p>
+
+{{ snippet.link( "Data analysis explained"
+, site.url ~ page.url ~ "explainer/"
+, "Explainer: Analysing MEP voting data"
+, site.url ~ page.url ~ "featured.png"
+, ""
+, ' '
+) }}
+
+{% endblock %}
+
+{% block foot_javascript %}
+<script type="text/javascript" src="{{site.url}}/assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+    document.getElementById("countryselect").value = "none";
+
+    $(document).on("blur change", "#countryselect" , function() {
+        var country = this.value.toLowerCase();
+        if(country == "none") {
+            document.getElementById("result").innerHTML = '<div class="mep"><p>Voting results of MEPs will appear here.</p></div>';
+        } else {
+            $.getJSON("json/" + country.toLowerCase() + ".json?", function(data){
+                result = parseCountry(data);
+                document.getElementById("result").innerHTML = result;
+                tooltips();
+            });
+        }
+    });
+
+    function parseCountry(data) {
+        var result = "";
+        for(i=0; i < data.length; i++) {
+            var mep = data[i];
+
+            result +=   '<div class="mep' + mep.overall + '">'+
+                    '        <div class="mepdata">'+
+                    '            <span class="mepname">' + mep.fullName.toLowerCase() + '</span>'+
+                    '            <span class="mepparty">' + mep.nationalPoliticalGroup + '</span>'+
+                    '        </div>'+
+                    '        <div class="mepvotes">'+
+                    '            <div class="mepvote"><span rel="tooltip" class="vote' + mep.actavote + '" title="' + reverseTitle(mep.actavote) + ' ACTA"></span> ACTA</div>'+
+                    '            <div class="mepvote"><span rel="tooltip" class="vote' + mep.gdprvote + '" title="' + makeTitle(mep.gdprvote) + ' GDPR"></span> GDPR</div>'+
+                    '            <div class="mepvote"><span rel="tooltip" class="vote' + mep.a13vote + '" title="' + reverseTitle(mep.a13vote) + ' Article 13"></span> Article 13</div>'+
+                    '            <div class="mepvote"><span rel="tooltip" class="vote' + mep.biovote + '" title="' + reverseTitle(mep.biovote) + ' combined biometric database"></span> Biometrics</div>'+
+                    '            <div class="mepvote"><span rel="tooltip" class="vote' + mep.terrorvote + '" title="' + reverseTitle(mep.terrorvote) + ' terror filters"></span> Terror filters</div>'+
+                    '        </div>'+
+                    '    </div>';
+        }
+        return result + "";
+    }
+
+    // Make title for voted
+    function makeTitle(value, vote) {
+        if(value == "good") { return "Voted for"; }
+        if(value == "bad") { return "Voted against"; }
+        if(value == "neutral" ) { return "Abstained on"; }
+        if(value == "none" ) { return "No vote on"; }
+        return "Error";
+    }
+
+    function reverseTitle(value) {
+        if(value == "bad") { return "Voted for"; }
+        if(value == "good") { return "Voted against"; }
+        if(value == "neutral" ) { return "Abstained on"; }
+        if(value == "none" ) { return "No vote on"; }
+        return "Error";
+    }
+
+    // ===== TOOLTIP =====
+    function tooltips()
+    {
+        var targets = $( '[rel~=tooltip]' ),
+                target  = false,
+                tooltip = false,
+                title   = false;
+
+        targets.bind( 'mouseenter', function()
+        {
+            target  = $( this );
+            tip     = target.attr( 'title' );
+            tooltip = $( '<div id="tooltip"></div>' );
+
+            if( !tip || tip == '' )
+                return false;
+
+            target.removeAttr( 'title' );
+            tooltip.css( 'opacity', 0 )
+                    .html( tip )
+                    .appendTo( 'body' );
+
+            var init_tooltip = function()
+            {
+                if( $( window ).width() < tooltip.outerWidth() * 1.5 )
+                    tooltip.css( 'max-width', $( window ).width() / 2 );
+                else
+                    tooltip.css( 'max-width', 340 );
+
+                var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
+                        pos_top  = target.offset().top - tooltip.outerHeight() - 20;
+
+                if( pos_left < 0 )
+                {
+                    pos_left = target.offset().left + target.outerWidth() / 2 - 20;
+                    tooltip.addClass( 'left' );
+                }
+                else
+                    tooltip.removeClass( 'left' );
+
+                if( pos_left + tooltip.outerWidth() > $( window ).width() )
+                {
+                    pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
+                    tooltip.addClass( 'right' );
+                }
+                else
+                    tooltip.removeClass( 'right' );
+
+                if( pos_top < 0 )
+                {
+                    var pos_top  = target.offset().top + target.outerHeight();
+                    tooltip.addClass( 'top' );
+                }
+                else
+                    tooltip.removeClass( 'top' );
+
+                tooltip.css( { left: pos_left, top: pos_top } )
+                        .animate( { top: '+=10', opacity: 1 }, 50 );
+            };
+
+            init_tooltip();
+            $( window ).resize( init_tooltip );
+
+            var remove_tooltip = function()
+            {
+                tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
+                {
+                    $( this ).remove();
+                });
+
+                target.attr( 'title', tip );
+            };
+
+            target.bind( 'mouseleave', remove_tooltip );
+            tooltip.bind( 'click', remove_tooltip );
+        });
+    }
+
+    $( tooltips() );
+</script>
+{% endblock %}

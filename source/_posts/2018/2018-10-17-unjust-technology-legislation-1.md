@@ -34,7 +34,7 @@ The most tragic of these cases is that of Aaron Swartz. Aaron was a true interne
 
 The case against Aaron was built on the CFAA, with one of the 13 charges against him being “unauthorised access to a computer,” and breaking and entering on the MIT campus. Unable to deal with the threatened 50 years in prison and $1 million in fines, he committed suicide before his trial.
 
-<blockquote>
+<blockquote class="left">
      There’s no justice in following unjust laws
      <p><cite>&mdash; Aaron Swartz</cite></p>
 </blockquote>

@@ -35,7 +35,7 @@
 
             {# If defined, place the hero image, otherwise add padding #}
             {% if page.heroimg %}
-                <img src="{{ page.link }}/{{ page.heroimg }}" class="blogpost_heroimg">
+                <img src="{{ site.url }}{{ page.url }}/{{ page.heroimg }}" class="blogpost_heroimg">
             {% endif %}
 
             {# Page content in container #}
@@ -46,12 +46,9 @@
             {% endif %}
                 <div class="toppadding"></div>
                 {# Post title and subtitle #}
-                {% if page.title is defined %}
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle is defined %}
-                        <span class="subtitle">{{ page.subtitle }}</span>
-                    {% endif %}
-                {% endif %}
+                <h1>{{ page.title }}</h1>
+                {% if page.subtitle %}<span class="subtitle">{{ page.subtitle }}</span>{% endif %}
+                {% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
 
                 {% block content %}{% endblock %}
             </div>

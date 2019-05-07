@@ -1,0 +1,29 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404/index.html
+
+# 301 redirects
+Redirect 301 /behind-the-screens-malware-analysis /2019/malware-analysis
+Redirect 301 /analysis-of-article-13 /2019/unjust-technology-legislation-3
+Redirect 301 /unjust-technology-legislation-ii /2019/unjust-technology-legislation-2
+Redirect 301 /guilty-until-proven-innocent-1 /2018/unjust-technology-legislation-1
+Redirect 301 /gdpr-impact-eu-privacy-law /2018/gdpr-impact-eu-privacy-law
+Redirect 301 /surveillance-the-uncomfortable-business-model-of-the-internet /2018/surveillance-internet-business-model
+Redirect 301 /physical-privacy-measures /2018/physical-privacy-measures
+Redirect 301 /habits-successful-people-truth /2018/habits-successful-people-truth
+Redirect 301 /adblocker-review-chrome-firefox /2018/adblocker-review-firefox-chrome
+Redirect 301 /google-chrome-adblocker /2018/google-chrome-adblock
+Redirect 301 /giving-up-privacy-trade-off-or-resignation /2018/privacy-tradeoff-resignation
+Redirect 301 /dead-european-cookie-law /2018/dead-european-cookie-law
+Redirect 301 /2017-privacy-security-review /2018/2017-privacy-security-review
+Redirect 301 /list-articles-annoying /2017/list-articles-annoying
+Redirect 301 /password-cracking-requirements /2017/password-cracking-requirements
+Redirect 301 /telling-better-stories /2017/eight-story-structures
+Redirect 301 /brain-food /2017/brain-food-influence
+Redirect 301 /intelligent-conversation /2017/starting-intelligent-conversation
+Redirect 301 /critical-thinking /2015/on-critical-thinking
+Redirect 301 /blog/technology-legislation /collections/technology-legislation

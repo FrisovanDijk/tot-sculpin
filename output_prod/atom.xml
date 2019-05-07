@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[Twenty of Time]]></title>
+    <link href="https://www.frisovandijk.com/tot-beta/atom.xml" rel="self"/>
+    <link href="https://www.frisovandijk.com/tot-beta/"/>
+    <updated>2019-05-07T18:54:39+02:00</updated>
+    <id>https://www.frisovandijk.com/tot-beta/</id>
+        <author>
+        <name><![CDATA[Friso van Dijk]]></name>        <email><![CDATA[mail@twentyoftime.com]]></email>    </author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+        <entry>
+        <title type="html"><![CDATA[Behind-the-screens of malware analysis - Interview with a ransomware expert]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2019/malware-analysis/"/>
+        <updated>2019-04-10T00:00:00+02:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2019/malware-analysis/</id>
+        <content type="html"><![CDATA[Over 350.000 new malicious programs are detected every day, built to exploit your devices. Ransomware attacks cause hospitals to shut down and inflict hundreds of millions in damages. Whilst malware has become more sophisticated, so have our defenders. There is a whole community out there fighting to keep our networks and PCs safe. Join me and ransomware researcher Fabian Wosar for a look into the world of anti-malware. <a href="https://www.frisovandijk.com/tot-beta/2019/malware-analysis/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Unjust Technology Legislation III - Analysis of Article 13 - The European Union’s next big mistake]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-3/"/>
+        <updated>2019-03-05T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-3/</id>
+        <content type="html"><![CDATA[From silently pushed legislation to serious public critiques, the history of technology legislation has seen it all. The EU prepares to take it one step further by wanting platforms to use unproven technology to protect economic interests. Article 13 of the new Copyright Directive is setting up for disappointment. <a href="https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-3/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Unjust Technology Legislation II - The public reaction - The continued undermining of a fundamental human right]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-2/"/>
+        <updated>2019-01-30T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-2/</id>
+        <content type="html"><![CDATA[In the second part of this series, we take a look at technology legislation after 9/11 and the American response. All but one of the laws discussed were drafted before the full scope of US surveillance became known. Even so, the public began to speak up. Starting in the European Union, public action soon spread to the rest of the world. Before we knew it, there were massive worldwide protests. <a href="https://www.frisovandijk.com/tot-beta/2019/unjust-technology-legislation-2/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Unjust Technology Legislation I - Everyone is presumed guilty - Corporate and government interests dismiss human rights]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/unjust-technology-legislation-1/"/>
+        <updated>2018-10-17T00:00:00+02:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/unjust-technology-legislation-1/</id>
+        <content type="html"><![CDATA[You are innocent until proven guilty, or until you decide to go online. The internet used to be a haven of free expression. Now it’s a place where every individual is suspected of being a terrorist or a pirate. Governments are caught up in an arms race of mass surveillance and hardly anyone appears to stop and think about the direction we’re heading in. It’s time to take a critical look at the technology legislation that undermines the core principles of a free society. <a href="https://www.frisovandijk.com/tot-beta/2018/unjust-technology-legislation-1/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[GDPR: impact of the new European privacy law - Exploring the influence of user rights as defined in the GDPR]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/gdpr-impact-eu-privacy-law/"/>
+        <updated>2018-04-12T00:00:00+02:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/gdpr-impact-eu-privacy-law/</id>
+        <content type="html"><![CDATA[Europe&#039;s new privacy law, the General Data Protection Regulation (GDPR), will become effective on 25 May 2018. It&#039;s a date a lot of organisations are dreading, as they need to get their IT systems in order. A less talked about subject is the impact of the law on users, who get additional rights. This article explores what it means for users and discusses the effects on your life. <a href="https://www.frisovandijk.com/tot-beta/2018/gdpr-impact-eu-privacy-law/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[The uncomfortable business model of the internet - The flow of data in surveillance capitalism]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/surveillance-internet-business-model/"/>
+        <updated>2018-03-22T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/surveillance-internet-business-model/</id>
+        <content type="html"><![CDATA[When you&#039;re online, you&#039;re being watched. Not just by the websites you visit, but also by advertisers and data brokers behind the scenes. Your behavioural patterns and interests are registered, turned into profit. Where do these companies get their data and what do they do with it? <a href="https://www.frisovandijk.com/tot-beta/2018/surveillance-internet-business-model/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Physical privacy measures - control of your own surroundings - Privacy screen protectors and reflective glasses?]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/physical-privacy-measures/"/>
+        <updated>2018-03-01T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/physical-privacy-measures/</id>
+        <content type="html"><![CDATA[When you think of digital privacy, you think of digital solutions. You install a tracker blocker, you use different information in online forms and you look for privacy-friendly ways of communication. What you may never think of is that protection can be physical as well. Let&#039;s step away from the screen for a moment and see what&#039;s out there. <a href="https://www.frisovandijk.com/tot-beta/2018/physical-privacy-measures/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[The habits of highly successful people: is there any truth to them? - Why our gut feeling about success may not be right]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/habits-successful-people-truth/"/>
+        <updated>2018-02-20T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/habits-successful-people-truth/</id>
+        <content type="html"><![CDATA[Success. We all desire it in one way or another. We often look at the ranks of famous achievers for inspiration. From what they eat for breakfast to the toilet paper they use, the habits of successful people have been thoroughly analysed. But is there any reason we should even investigate them at all? <a href="https://www.frisovandijk.com/tot-beta/2018/habits-successful-people-truth/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Adblocker review: which best fits your preferences? - Reviewing adblockers for Firefox and Google Chrome]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/adblocker-review-firefox-chrome/"/>
+        <updated>2018-02-13T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/adblocker-review-firefox-chrome/</id>
+        <content type="html"><![CDATA[It may be a pop-up that blocks you from accessing a website. Or perhaps that video that starts playing on a volume your deaf neighbour can hear. At some point, online advertisements become too intrusive to deal with. This week I review some of the most popular adblockers to help you choose the one that fits your preferences for advertisements. <a href="https://www.frisovandijk.com/tot-beta/2018/adblocker-review-firefox-chrome/">Read more »</a>]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Google Chrome: protecting the advertisement business - Google’s attempt at strong-arming the industry]]></title>
+        <link href="https://www.frisovandijk.com/tot-beta/2018/google-chrome-adblock/"/>
+        <updated>2018-02-06T00:00:00+01:00</updated>
+        <id>https://www.frisovandijk.com/tot-beta/2018/google-chrome-adblock/</id>
+        <content type="html"><![CDATA[We all know them, those annoying advertisements. Your screen gets blocked, a large advertisement loads and you&#039;re forced to wait before you can continue. Highly annoying. Now, such advertisements may soon belong to the past. Google Chrome is getting a built-in adblocker aimed at improving the user experience by blocking bad advertising practices. What&#039;s the catch? <a href="https://www.frisovandijk.com/tot-beta/2018/google-chrome-adblock/">Read more »</a>]]></content>
+    </entry>
+    </feed>
