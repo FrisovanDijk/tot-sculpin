@@ -2,6 +2,6 @@
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
 title: Twenty of Time
-url: https://www.frisovandijk.com/tot-beta
+url: https://www.twentyoftime.com
 author: Friso van Dijk
 email: mail@twentyoftime.com
