@@ -22,12 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/.htaccess">
+      <file leaf-file-name="2019-05-08-european-parliament-voting-digital-rights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/2019/2019-05-08-european-parliament-voting-digital-rights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="40" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+        <entry file="file://$PROJECT_DIR$/source/sitemap-generator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="explainer.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/explainer.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor vertical-scroll-proportion="0.0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding>
+                  <marker date="1557349696594" expanded="true" signature="3296:3617" placeholder="CREATE VIEW `mep-votes-name`... " />
+                  <marker date="1557349696594" expanded="true" signature="3328:3617" placeholder="SELECT mep.i... mep" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -47,8 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/2019/2019-03-10-malware-analysis.md" />
-        <option value="$PROJECT_DIR$/post_documentation.md" />
         <option value="$PROJECT_DIR$/source/_posts/2019/2019-01-30-unjust-technology-legislation-2.md" />
         <option value="$PROJECT_DIR$/source/_layouts/partials/blog_sharebuttons.twig" />
         <option value="$PROJECT_DIR$/source/_layouts/empty.twig" />
@@ -90,7 +113,6 @@
         <option value="$PROJECT_DIR$/source/assets/css/partials/_page_elements.scss" />
         <option value="$USER_HOME$/surfdrive/TwentyOfTime/Articles/2019/2019-05 Voting data European Parliament/0.2-article-text.html" />
         <option value="$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/explainer.md" />
-        <option value="$PROJECT_DIR$/source/_posts/2019/2019-05-10-european-parliament-digital-freedom.html" />
         <option value="$PROJECT_DIR$/source/_layouts/blogpost.twig" />
         <option value="$PROJECT_DIR$/source/_layouts/page.twig" />
         <option value="$PROJECT_DIR$/source/_layouts/site_skeleton.twig" />
@@ -98,6 +120,9 @@
         <option value="$PROJECT_DIR$/app/config/sculpin_site_prod.yml" />
         <option value="$PROJECT_DIR$/source/_layouts/partials/head_sharingmeta.twig" />
         <option value="$PROJECT_DIR$/source/.htaccess" />
+        <option value="$USER_HOME$/Desktop/sitemap-generator.php" />
+        <option value="$PROJECT_DIR$/source/_posts/2019/2019-05-10-european-parliament-digital-freedom.html" />
+        <option value="$PROJECT_DIR$/source/_posts/2019/2019-05-08-european-parliament-voting-digital-rights.html" />
       </list>
     </option>
   </component>
@@ -191,11 +216,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PHP\tot sculpin\source\2019\european-parliament-digital-freedom\explainer" />
+      <recent name="D:\PHP\tot sculpin\source\2019\european-parliament-voting-digital-rights" />
+      <recent name="D:\PHP\tot sculpin\source" />
       <recent name="D:\PHP\tot sculpin\source\2019\european-parliament-digital-freedom" />
+      <recent name="D:\PHP\tot sculpin\source\2019\european-parliament-digital-freedom\explainer" />
       <recent name="D:\PHP\tot sculpin\source\2019" />
-      <recent name="D:\PHP\tot sculpin\output_dev\2019\european-parliament-digital-freedom" />
-      <recent name="D:\PHP\tot sculpin\source\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PHP\tot sculpin\source\2019\european-parliament-digital-freedom" />
@@ -250,15 +275,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30490404" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31449893" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12784399" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19609967" sideWeight="0.50852877" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19609967" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19609967" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,6 +312,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/2019/2019-01-30-unjust-technology-legislation-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -466,7 +498,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/json/austria.json">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/json/austria.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42005813">
           <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
@@ -514,7 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/eurparl.scss">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/eurparl.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.346153">
           <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
@@ -535,33 +567,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/prepared-data.csv">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/prepared-data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/explainer3.PNG">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/explainer3.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/explainer2.PNG">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/explainer2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/explainer1.PNG">
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/explainer1.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/surfdrive/TwentyOfTime/Articles/2019/2019-05 Voting data European Parliament/article-text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0872093">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/css/partials/_blogpost.scss">
@@ -583,26 +608,6 @@
         <state split_layout="SPLIT">
           <first_editor vertical-scroll-proportion="-0.9001513">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/surfdrive/TwentyOfTime/Articles/2019/2019-05 Voting data European Parliament/0.2-article-text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-digital-freedom/explainer.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.25718608">
-            <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
@@ -641,28 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56831396">
           <caret line="23" column="135" selection-start-line="23" selection-start-column="135" selection-end-line="23" selection-end-column="135" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2019/2019-05-10-european-parliament-digital-freedom.html">
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.8731118">
-            <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
-            <folding>
-              <element signature="n#style#0;n#a#0;n#p#0;n#!!top" expanded="false" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024709303">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#p#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.024709303">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0952381">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,11 +668,55 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/sitemap-generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44476745">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5">
           <caret line="30" column="40" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2019/2019-05-08-european-parliament-voting-digital-rights.html">
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.8731118">
+            <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/sitemap-generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/2019/european-parliament-voting-digital-rights/explainer.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1557349696594" expanded="true" signature="3296:3617" placeholder="CREATE VIEW `mep-votes-name`... " />
+              <marker date="1557349696594" expanded="true" signature="3328:3617" placeholder="SELECT mep.i... mep" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

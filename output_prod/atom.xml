@@ -3,11 +3,18 @@
     <title><![CDATA[Twenty of Time]]></title>
     <link href="https://www.twentyoftime.com/atom.xml" rel="self"/>
     <link href="https://www.twentyoftime.com/"/>
-    <updated>2019-05-07T21:55:37+02:00</updated>
+    <updated>2019-05-08T23:11:03+02:00</updated>
     <id>https://www.twentyoftime.com/</id>
         <author>
         <name><![CDATA[Friso van Dijk]]></name>        <email><![CDATA[mail@twentyoftime.com]]></email>    </author>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+        <entry>
+        <title type="html"><![CDATA[EU2019: Which MEPs voted in favour of digital rights? - Analysing voting data of the European Parliament]]></title>
+        <link href="https://www.twentyoftime.com/2019/european-parliament-voting-digital-rights/"/>
+        <updated>2019-05-08T00:00:00+02:00</updated>
+        <id>https://www.twentyoftime.com/2019/european-parliament-voting-digital-rights/</id>
+        <content type="html"><![CDATA[With the European elections in two weeks, it&#039;s astounding how little the campaigns talk about digital rights. Just two months ago, thousands of people took to the street to protest Article 13. They were backed up by 5 million signatures on an online petition. They stood up for digital rights, only for our representative politicians to keep quiet. If they won&#039;t talk about them, we can at least look at how they acted: by analysing their voting history. <a href="https://www.twentyoftime.com/2019/european-parliament-voting-digital-rights/">Read more »</a>]]></content>
+    </entry>
         <entry>
         <title type="html"><![CDATA[Behind-the-screens of malware analysis - Interview with a ransomware expert]]></title>
         <link href="https://www.twentyoftime.com/2019/malware-analysis/"/>
@@ -70,12 +77,5 @@
         <updated>2018-02-13T00:00:00+01:00</updated>
         <id>https://www.twentyoftime.com/2018/adblocker-review-firefox-chrome/</id>
         <content type="html"><![CDATA[It may be a pop-up that blocks you from accessing a website. Or perhaps that video that starts playing on a volume your deaf neighbour can hear. At some point, online advertisements become too intrusive to deal with. This week I review some of the most popular adblockers to help you choose the one that fits your preferences for advertisements. <a href="https://www.twentyoftime.com/2018/adblocker-review-firefox-chrome/">Read more »</a>]]></content>
-    </entry>
-        <entry>
-        <title type="html"><![CDATA[Google Chrome: protecting the advertisement business - Google’s attempt at strong-arming the industry]]></title>
-        <link href="https://www.twentyoftime.com/2018/google-chrome-adblock/"/>
-        <updated>2018-02-06T00:00:00+01:00</updated>
-        <id>https://www.twentyoftime.com/2018/google-chrome-adblock/</id>
-        <content type="html"><![CDATA[We all know them, those annoying advertisements. Your screen gets blocked, a large advertisement loads and you&#039;re forced to wait before you can continue. Highly annoying. Now, such advertisements may soon belong to the past. Google Chrome is getting a built-in adblocker aimed at improving the user experience by blocking bad advertising practices. What&#039;s the catch? <a href="https://www.twentyoftime.com/2018/google-chrome-adblock/">Read more »</a>]]></content>
     </entry>
     </feed>
