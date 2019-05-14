@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: Adblocker review: which best fits your preferences?
+title: Choosing the best adblocker for you
 subtitle: Reviewing adblockers for Firefox and Google Chrome
 intro: It may be a pop-up that blocks you from accessing a website. Or perhaps that video that starts playing on a volume your deaf neighbour can hear. At some point, online advertisements become too intrusive to deal with. This week I review some of the most popular adblockers to help you choose the one that fits your preferences for advertisements.
 readtime: 13 min
