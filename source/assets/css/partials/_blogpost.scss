@@ -20,6 +20,10 @@
     padding: 1px ($padding) 30px;
   }
 
+  @media screen and (min-width:$breakpoint2) {
+    padding: 1px 52px 30px;
+  }
+
   color: #1f0909;
   hyphens: auto;
 

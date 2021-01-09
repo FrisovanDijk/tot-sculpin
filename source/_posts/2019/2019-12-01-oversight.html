@@ -1,0 +1,96 @@
+---
+draft: true
+layout: page
+title: Help train an algorithm to understand public ethics
+subtitle: A game on AI in the real world
+readtime: 4 min
+---
+
+{% block custom_stylesheet %}
+<link rel="stylesheet" href="{{ site.url }}{{ page.url }}style.css">
+{% endblock %}
+
+{% block content %}
+<article class="o-container">
+
+    <header>
+        <h3>NCAA PUBLIC ETHICS PROGRAM</h3>
+    </header>
+
+    <div class="front-page o-page">
+        <div class="message">
+            <p>Welcome world citizen.</p>
+            <p>The International Crime Analysis Association has selected you to aid in the NCAA Public Ethics Program, mandated by Digital Investigative Powers Act of 2021.</p>
+            <p>You have been selected from a sample representative of the general population. The purpose of this program is to capture representative public ethics for use in our automated digital communications surveillance.</p>
+            <p>After entering the program by clicking `begin`, you will be `x` samples of conversation marked by our algorithm. You can choose to `escalate` it if it’s a suspicious event, or you can mark it as `not suspicious`. </p>
+            <p>The world needs your help.</p>
+
+            <button class="o-button" onclick="location.href='#case/0'">Begin</button>
+        </div>
+    </div>
+
+    <div class="case-page o-page">
+
+    </div>
+
+    {% verbatim %}
+    <script id="case-template" type="x-handlebars-template">
+        <div class="sd-wrapper">
+            <div class="suspect">
+                <div class="s-photo"><img src="{{ suspect.image }}"></div>
+                <div class="s-name">{{ suspect.name }}</div>
+                <div class="s-previous-offenses">
+                    Offense history:
+                    <ul>
+                        {{#each suspect.history }}
+                            <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="m-suspicion">Possible {{ suspicion }}</div>
+            <div class="m-time">{{ time }} ago</div>
+            <div class="m-type">{{ type }} by
+                {{#each people}}
+                <span class="m-t-name"> {{ this }}</span>
+                {{/each}}</div>
+            <div class="m-reason">Available because: {{ reason }}</div>
+            <div class="m-transcript">
+                <table>
+                    {{#each transcript}}
+                    <tr>
+                        <td class="m-tr-name">{{ this.[0] }}</td>
+                        <td>{{{ this.[1] }}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+            <div class="decision">
+                <button class="o-button d-button-y" onclick="location.href='{{ next-page }}'">Suspicious</button>
+                <button class="o-button d-button-n" onclick="location.href='{{ next-page }}'">Not suspicious</button>
+            </div>
+        </div>
+    </script>
+    {% endverbatim %}
+
+    <div class="final-page o-page">
+        <div class="message">
+            <p>Thank you for participating.</p>
+
+            <button class="o-button" onclick="location.href='#'">Start over</button>
+        </div>
+    </div>
+
+    <div class="error-page o-page">
+        <h3>Sorry, something went wrong :(</h3>
+    </div>
+</article>
+{% endblock %}
+
+{% block foot_javascript %}
+<script type="text/javascript" src="{{site.url}}/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/handlebars.min.js"></script>
+<script type="text/javascript" src="{{site.url}}{{ page.url }}script.js"></script>
+{% endblock %}

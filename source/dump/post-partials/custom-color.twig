@@ -1,0 +1,13 @@
+{# Define the colour styles for the specific post if defined #}
+{{ parent() }}
+<style type="text/css">
+    {% if page.color %}
+    h1, h2 {
+        color: {{ page.color }}
+    }
+
+    blockquote {
+        border-color: {{ page.color }};
+    }
+    {% endif %}
+</style>

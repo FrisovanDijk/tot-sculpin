@@ -1,0 +1,40 @@
+{% if page.previous_post or page.next_post %}
+    <div class="blog_nextpost">
+        {% if page.next_post %}
+            <div class="snippet">
+                <a href="{{ site.url }}{{ page.next_post.url }}">
+                    <div class="snippet-title">Next post</div>
+                    {% if page.next_post.heroimg %}
+                        <figure>
+                            <img src="{{ site.url }}{{ page.next_post.url }}social.png" alt="link image">
+                        </figure>
+                    {% else %}
+                        <div class="toppadding"></div>
+                    {% endif %}
+                    <div class="snippet-inner">
+                        <span class="title">{{ page.next_post.title }}</span>
+                        {% if page.next_post.subtitle %}<p>{{ page.next_post.subtitle }}</p>{% endif %}
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+        {% if page.previous_post %}
+            <div class="snippet">
+                <a href="{{ site.url }}{{ page.previous_post.url }}">
+                    <div class="snippet-title">Previous post</div>
+                    {% if page.previous_post.heroimg %}
+                        <figure>
+                            <img src="{{ site.url }}{{ page.previous_post.url }}social.png" alt="link image">
+                        </figure>
+                    {% else %}
+                        <div class="toppadding"></div>
+                    {% endif %}
+                    <div class="snippet-inner">
+                        <span class="title">{{ page.previous_post.title }}</span>
+                        {% if page.previous_post.subtitle %}<p>{{ page.previous_post.subtitle }}</p>{% endif %}
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

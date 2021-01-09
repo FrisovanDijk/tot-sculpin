@@ -1,0 +1,18 @@
+{% set menuicon = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>' %}
+
+<a href="{{ site.url }}/">
+    <img src="{{ site.url }}/assets/site/logo-outline.svg" alt="Twenty of Time logo" class="logo">
+</a>
+
+<label for="toggleControl" class="nav_open" id="toggle2">
+    <span class="show_lg">menu</span>
+    {{ menuicon|raw }}
+</label>
+<input type="checkbox" id="toggleControl" style="display: none;" autocomplete="off">
+<nav id="toggleMe" class="tot_sideNav">
+    <label for="toggleControl" class="closebtn">&times;</label>
+    <a href="{{ site.url }}/">Home</a>
+    <a href="{{ site.url }}/collections/">Collections</a>
+    <a href="{{ site.url }}/about/">About</a>
+    <a href="{{ site.url }}/search/">Search</a>
+</nav>

@@ -1,0 +1,59 @@
+{# Card UI component #}
+
+{#
+ required:
+ - title
+
+ optional:
+ - description
+ - url
+ - target           / _blank, _current, etc.
+ - image_url
+ - image_alt
+ - author_avatar
+ - author_name
+ - short            / boolean
+ - full-width       / boolean
+ - quote            / boolean
+ - cover image      / boolean
+#}
+
+{% macro card(vars) %}
+<div class="card {{ vars.full-width ? "card--full" }} {{ vars.short ? "card--short" }} {{ vars.cover ? "card--cover" }} {{ vars.quote ? "card--quote" }}">
+    {% if vars.url %}
+        <a href="{{ vars.url }}"
+           target="{{ vars.target ?? "_self" }}"
+        >
+    {% endif %}
+
+    <div class="card__content">
+        {% if vars.image_url %}
+        <div class="card__image">
+            <img class="card__image--src" src="{{ vars.image_url }}" alt="{{ vars.image_alt }}">
+        </div>
+        {% endif %}
+
+        <div class="card__title">{{ vars.title }}</div>
+
+        {% if vars.description %}
+        <div class="card__description">{{ vars.description }}</div>
+        {% endif %}
+
+        {% if vars.author %}
+        <div class="card__author">
+            {% if vars.author_avatar %}
+            <div class="card__author__avatar">
+                <img class="card__author__avatar--src" src="{{ vars.author_avatar }}" alt="{{ vars.author_name }}">
+            </div>
+            {% endif %}
+            <div class="card__author__name">{{ vars.author_name }}</div>
+        </div>
+        {% endif %}
+
+    </div>
+
+    {% if vars.url %}
+        </a>
+    {% endif %}
+</div>
+{% endmacro %}

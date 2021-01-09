@@ -1,5 +1,5 @@
 ---
-layout: wideimg
+layout: post-views/wideimg
 title: The uncomfortable business model of the internet
 subtitle: The flow of data in surveillance capitalism
 intro: When you're online, you're being watched. Not just by the websites you visit, but also by advertisers and data brokers behind the scenes. Your behavioural patterns and interests are registered, turned into profit. Where do these companies get their data and what do they do with it?

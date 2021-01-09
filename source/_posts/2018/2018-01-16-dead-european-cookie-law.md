@@ -1,5 +1,5 @@
 ---
-layout: wideimg
+layout: post-views/wideimg
 title: Dead at conception: the European cookie law
 subtitle: A retrospective of unenforceable legislation
 intro: The European Cookie Law was intended to protect internet users from unbridled tracking. Its aim was to make users more privacy-aware and to make tracking mechanisms explicit. When the law was set in place, the internet braced itself for a European Union ready to flex its muscles. But nothing happened. How come?

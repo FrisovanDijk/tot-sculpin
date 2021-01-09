@@ -79,6 +79,7 @@ figure {
 
 .imgleft, .imgright {
   width: 100vw;
+  text-align: center;
 
   // Below large width center image neatly
   @media screen and (max-width: ($breakpoint4 - 1px)) {
@@ -101,7 +102,6 @@ figure {
   .imgleft, .imgright {
     max-width: 50%;
     margin: 14px 20px;
-    text-align: center;
   }
 
   .imgleft {

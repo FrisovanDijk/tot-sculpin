@@ -1,0 +1,45 @@
+{% extends "default" %}
+
+{#
+    Base template for blog post
+#}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block head_stylesheet %}
+    {% include "post-partials/custom-color.twig" %}
+{% endblock %}
+
+{# Define the main content block #}
+{% block main %}
+    <article class="blogpost">
+        {% block content_wrapper %}
+
+            {% include "post-partials/post-header.twig" %}
+
+            {# Post content in container #}
+            <div class="blogpost_content blogpost_content_lightbg">
+                {# author image and post intro #}
+                <p>{% include("post-partials/authorimg.twig") %}</p>
+                {% if page.intro %}
+                    <p class="intro">{{ page.intro }}</p>
+                {% endif %}
+
+                {% block content %}{% endblock %}
+
+                {% include("partials/subscribeform.twig") %}
+            </div>
+        {% endblock %}
+    </article>
+
+    <div class="blogpost_content">
+        {# Share buttons #}
+        <div class="share_post">
+            {% include("post-partials/sharebuttons.twig") %}
+        </div>
+
+        {% include("post-partials/blog_comments.twig") %}
+
+        {% include("post-partials/nextposts.twig") %}
+    </div>
+{% endblock %}

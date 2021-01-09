@@ -1,0 +1,11 @@
+{% if page.author %}
+<div class="author_container">
+    {% for author in page.author %}
+        <div class="authorimg">
+            <img src="{{ site.url }}/assets/authors/{{ author.img }}" alt="{{ author.name }}">
+            <span class="authorname">{{ author.name }}</span>
+            <span class="authortext">{{ author.text }}</span>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}

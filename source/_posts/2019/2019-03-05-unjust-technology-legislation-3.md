@@ -1,5 +1,5 @@
 ---
-layout: wideimg
+layout: post-views/wideimg
 title: Unjust Technology Legislation III - Analysis of Article 13
 subtitle: The European Union’s next big mistake
 intro: From silently pushed legislation to serious public critiques, the history of technology legislation has seen it all. The EU prepares to take it one step further by wanting platforms to use unproven technology to protect economic interests. Article 13 of the new Copyright Directive is setting up for disappointment.

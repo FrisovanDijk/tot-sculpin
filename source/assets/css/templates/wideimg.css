@@ -1,1 +1,21 @@
-@media screen and (min-width: 969px){.imgleft,.imgright{max-width:60%;margin:14px 30px}.imgleft{margin-left:-12%}img.imgleft,.imgleft img{box-shadow:6px 8px rgba(174,178,178,0.6)}.imgright{margin-right:-18%}img.imgright,.imgright img{box-shadow:-6px 8px rgba(174,178,178,0.6)}}.blogpost_content_lightbg{box-shadow:none}.consent_form{box-shadow:none}
+@media screen and (min-width: 969px) {
+  .imgleft, .imgright {
+    max-width: 60%;
+    margin: 14px 30px; }
+
+  .imgleft {
+    margin-left: -12%; }
+
+  img.imgleft, .imgleft img {
+    box-shadow: 6px 8px rgba(174, 178, 178, 0.6); }
+
+  .imgright {
+    margin-right: -18%; }
+
+  img.imgright, .imgright img {
+    box-shadow: -6px 8px rgba(174, 178, 178, 0.6); } }
+.blogpost_content_lightbg {
+  box-shadow: none; }
+
+.consent_form {
+  box-shadow: none; }

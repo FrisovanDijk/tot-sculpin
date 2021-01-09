@@ -1,0 +1,200 @@
+/** Page layout **/
+.page_content {
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/** Container classes */
+
+.o-container {
+    width: calc(100% - 40px);
+
+    min-height: 600px;
+    max-width: 1000px;
+    min-width: 316px;
+    margin: 40px auto;
+
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Padding for title and subtitle */
+h1, .subtitle {
+    padding: 0 10px;
+}
+
+.o-container, .o-container h3 {
+    font-family: "Times New Roman", serif;
+}
+
+.o-container header {
+    background-color: #09183f;
+    color: white;
+    padding: 10px;
+}
+
+.o-container header h3 {
+    padding: 0;
+}
+
+.o-page {
+    width: 100%;
+
+    display: none;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.message, .sd-wrapper {
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.message {
+    flex-grow: 2;
+}
+
+.message p {
+    margin-top: 0;
+}
+
+.sd-wrapper {
+    width: 250px;
+}
+
+/** Message */
+
+.m-suspicion {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.m-time {
+    color: #696969;
+    float: none;
+}
+
+@media screen and (min-width: 500px) {
+    .m-time {
+        float: right;
+    }
+}
+
+.m-type {
+}
+
+.m-t-name {
+    color: #b81c1a;
+}
+
+.m-reason {
+    color: #696969;
+}
+
+.m-transcript {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e5e5e5;
+}
+
+.m-transcript img {
+    border: 10px solid #ffffff;
+    width: 200px;
+    max-width: 90%;
+}
+
+.m-transcript td {
+    vertical-align: top;
+}
+
+.m-alert {
+    background-color: rgba(255, 253, 160, 0.7);
+    padding: 2px 4px;
+}
+
+.m-tr-name {
+    text-align: right;
+    padding: 0 10px;
+}
+
+/** Suspect and decision */
+
+.suspect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.decision {
+    align-self: flex-end;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.decision button {
+    margin: 4px;
+}
+
+.s-photo {
+    text-align: center;
+}
+
+.s-photo img {
+    max-width: 150px;
+    padding: 10px 8px;
+    border: 1px solid #282D34;
+}
+
+.s-name, .s-previous-offenses {
+}
+
+.s-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.s-previous-offenses {
+    font-size: 16px;
+}
+
+.s-previous-offenses ul {
+    margin: 0;
+}
+
+/** General button */
+
+.o-button {
+    display: inline-block;
+    width: 48%;
+    max-width: 300px;
+    background: #09183f;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin: 4px 0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.o-button:hover, .o-button:focus {
+    opacity: .7;
+    transition: opacity .15s ease-in;
+}

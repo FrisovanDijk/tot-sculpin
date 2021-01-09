@@ -1,0 +1,22 @@
+{% extends "default" %}
+
+{#
+    Base template for blog post
+#}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block head_stylesheet %}
+    {% include "post-partials/custom-color.twig" %}
+{% endblock %}
+
+{% block main %}
+    <article class="blogpost">
+    {% block content_wrapper %}
+
+        {% include "post-partials/post-header.twig" %}
+
+                {% block content %}{% endblock %}
+    {% endblock %}
+    </article>
+{% endblock %}

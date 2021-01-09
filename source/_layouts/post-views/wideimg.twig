@@ -1,0 +1,10 @@
+{% extends "blogpost" %}
+
+{#
+    Template for blog post with images wider than content
+#}
+
+{# Define the colour styles for the specific post if defined #}
+{% block custom_stylesheet %}
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/templates/wideimg.css">
+{% endblock %}

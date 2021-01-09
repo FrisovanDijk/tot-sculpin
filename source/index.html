@@ -3,13 +3,14 @@ layout: empty
 title: Index
 generator: pagination
 pagination:
-    max_per_page: 4
+    max_per_page: 6
 use:
     - posts
 ---
 
 <div class="toppadding"></div>
 
+<div class="blog_overview">
 {% for post in page.pagination.items %}
     <article class="post_preview">
         {% if post.heroimg %}
@@ -20,14 +21,18 @@ use:
             </a>
         {% endif %}
             <div class="post_preview_text">
-            <h2>
-                <a href="{{ site.url }}{{ post.url }}" {% if post.color|length %} style="color:{{ post.color }} {% endif %}">{% if post.draft %}(draft) {% endif %}{{ post.title }}</a>
-            </h2>
-            <span class="subtitle">{{ post.subtitle }}</span>
+            <a href="{{ site.url }}{{ post.url }}">
+                <h2 {% if post.color|length %} style="color:{{ post.color }}" {% endif %}>
+                    {% if post.draft %}(draft) {% endif %}{{ post.title }}
+                </h2>
+                <span class="subtitle">{{ post.subtitle }}</span>
+            </a>
+            {% if loop.first or loop.index == 4 %}
             <p>
                 {{ post.intro }}
                 <br/><a href="{{ site.url }}{{ post.url }}" class="post_preview_readmore">Continue reading »</a>
             </p>
+            {% endif %}
             <div class="post_preview_metadata">
                 <span class="post_metadata_block">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
@@ -57,20 +62,11 @@ use:
         </div>
     </article>
 {% endfor %}
+</div>
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <div class="pagination">
         {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">previous</a>{% endif %}
-        {% for i in range(-2,2) %}
-            {% if i == 0 %}
-                <span class="currpage">{{ page.pagination.page + i }}</span>
-            {% else %}
-                {% if page.pagination.page + i > 1 and page.pagination.page + i <=   page.pagination.total_pages %}
-                    <a href="{{ site.url }}/page/{{ page.pagination.page + i }}">{{ page.pagination.page + i }}</a>
-                {% elseif page.pagination.page + i == 1 %}
-                    <a href="{{ site.url}}/">1</a>
-                {% endif %}
-            {% endif %}
-        {% endfor %}
+        <span class="currpage">Page {{ page.pagination.page}} of {{ page.pagination.total_pages }}</span>
         {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">next</a>{% endif %}
     </div>
 {% endif %}

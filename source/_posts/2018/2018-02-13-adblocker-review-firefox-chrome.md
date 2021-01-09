@@ -1,10 +1,10 @@
 ---
 layout: blogpost
-title: Choosing the best adblocker for you
+title: Choosing the right adblocker
 subtitle: Reviewing adblockers for Firefox and Google Chrome
 intro: It may be a pop-up that blocks you from accessing a website. Or perhaps that video that starts playing on a volume your deaf neighbour can hear. At some point, online advertisements become too intrusive to deal with. This week I review some of the most popular adblockers to help you choose the one that fits your preferences for advertisements.
 readtime: 13 min
-updated: 29-04-2019
+updated: 30-05-2019
 heroimg: featured.png
 color: "#91471c"
 author:
@@ -48,23 +48,32 @@ I have selected several popular adblockers to review from the many alternatives.
 
 If I've missed anything worth mentioning, feel free to mention that in the comments below and I'll update the guide over time.
 
-### The old standard: Adblock
+### For rebels: AdNauseum – New in 2019
 
-**Browsers**: Chrome, Edge, Firefox, Opera, Safari
-**Website:** <a href="https://getadblock.com/" target="_blank">Adblock</a>
+**Browsers:** Chrome, Firefox, Opera
+**Website:** <a href="https://adnauseam.io/" target="_blank">AdNauseum.io</a>
 
 <figure class="imgright">
-    <img src="adblocking1.png" alt="Adblock interface">
-    <figcaption>AdBlock's interface is functional and clear</figcaption>
+    <img src="adnauseum1.png" alt="AdNauseum interface">
+    <figcaption>It feels good seeing how much money was spent getting your attention</figcaption>
 </figure>
 
-My first encounter with adblocking and one of the most popular adblockers on the market. Its functionality is fairly straightforward, as it's a one-click install. It works like a charm, blocking everything from standard banners to in-video advertisements in YouTube.
+AdNauseum is a special case. It has been blocked by Google from their Google Web Store. You can still install it in Chrome, but it requires a bit of a workaround. But why would you do that?
 
-If you click on the icon, you're presented with options to pause adblocking, whitelist a domain or page, block specific advertisements and more. You have all the functionality you'd expect from an adblocker in a clean overview.
+The idea behind AdNauseum is getting privacy by giving them so much data it’s useless. It does this by clicking on every advertisement in the background. You, the user, don't notice this at all and see the same results as a regular adblocker. This costs businesses money, so they don’t like it.
 
-AdBlock is part of the Acceptable Ads Program, which Adblock Plus (reviewed further below) founded. They have a guide on how to opt out of this, being very open and upfront about it. It does not receive any money from this program and just subscribes to the whitelist, making it an acceptable way of adblocking if you agree with this philosophy. The difference with Adblock Plus is that there\'s no monetary incentive in it for them, only an ideological one.
+AdNauseum is built on top of uBlock Origin, which is discussed below. By clicking the little *μ* in the bottom left, you open the underlying functions of that adblocker. It just ads the extra layer of clicking on all ads.
 
-For people who want to be more moderate about adblocking, this may not be the best option. It allows you to block additional ads on websites, but doesn't provide an option to only block ads you specify. You can't whitelist a website and then block only specific ads. Overall, Adblock is a tried and tested product and has been for a long time, so it's a good option for anyone wanting to block ads and not minding some being whitelisted.
+From a business perspective, AdNauseum makes you a menace that messes up their metrics and costs them money. You don’t have to set anything up. It just clicks ads in the background. That is their major philosophy. If enough people use AdNauseum, there will be a strong financial signal that we don't want targeted advertising.
+
+When you visit the Ad Vault in AdNauseum, it shows you all the ads it clicked. Where seeing 3 ads cost advertisers an estimated $4.74, it's fun to see the total $34.76 spent for having me read some articles.
+
+My standard adblocker is uBlock Origin, so my experience with AdNauseum was one of familiarity. It's a known and trusted basis beneath all the fun stuff of clicking ads. It makes me wonder how much money I could've wasted with the 784,337 ads uBlock Origin has blocked for me since I installed it.
+
+<figure class="imgcenter">
+    <img src="adnauseum2.png" alt="Adnauseum money wasted">
+    <figcaption>AdNauseum shows you how much money it wasted</figcaption>
+</figure>
 
 ### User-friendly: Ghostery
 
@@ -96,7 +105,7 @@ AdGuard is an adblocker that looks and feels very modern. Where uBlock feels dec
 
 AdGuard is different from the other adblockers in this list as its backing company also offers paid products. They have a free browser extension (which I used for this review), but require payment for desktop versions of their products. How they make money appears straightforward, giving me a lot of trust in their solution.
 
-Upon installing the adblocker, you\'re welcomed with some options. You can block social media widgets, analytics and more right out of the box, giving an immediate sense of control over your online experience. Based on my previous experiences, AdGuard offers more options than I expected from an adblocker. It gets technical at times, but if you want to dive deep, you can do so with this adblocker. Consider me impressed.
+Upon installing the adblocker, you're welcomed with some options. You can block social media widgets, analytics and more right out of the box, giving an immediate sense of control over your online experience. Based on my previous experiences, AdGuard offers more options than I expected from an adblocker. It gets technical at times, but if you want to dive deep, you can do so with this adblocker. Consider me impressed.
 
 ### For tinkerers: uBlock Origin
 
@@ -110,23 +119,43 @@ Upon installing the adblocker, you\'re welcomed with some options. You can block
 
 uBlock Origing (uBO) is not an adblocker per se, it's a general-purpose blocker. That means it blocks not only ads, but also trackers and the like. In fact, out of the box its performance is top of the line. The beauty of uBO is that it's very light-weight on your computer's resources, much more so than Adblock and Adblock Plus.
 
-What the browser extension wins in speed, it lacks in usability. It's quite easy to block an advertisement by clicking the right icon, but their purpose isn\'t that clear on the first use. It takes some time to figure out what everything does.
+What the browser extension wins in speed, it lacks in usability. It's quite easy to block an advertisement by clicking the right icon, but their purpose isn't that clear on the first use. It takes some time to figure out what everything does.
 
 uBO is a fully open source project, which means its source code is available for anyone to review. It's also fully open source in the sense that nobody is making money of the product. This means that it's very hard to hide things that shouldn't be in there, although it also means that a lot of dubious copies have appeared on the internet. Make sure you get it from the right place.
 
 Overall, my experience with uBO is very positive once you figure out the user interface. It feels archaic after seeing the shiny options, but it's very lightweight and works great. For the freedom it gives, it’s a great albeit more technical tool for customising your experience.
 
+
+
+### Old reliable: Adblock
+
+**Browsers**: Chrome, Edge, Firefox, Opera, Safari
+**Website:** <a href="https://getadblock.com/" target="_blank">Adblock</a>
+
+<figure class="imgright">
+    <img src="adblocking1.png" alt="Adblock interface">
+    <figcaption>AdBlock's interface is functional and clear</figcaption>
+</figure>
+
+My first encounter with adblocking and one of the most popular adblockers on the market. Its functionality is fairly straightforward, as it’s a one-click install. It works like a charm, blocking everything from standard banners to in-video advertisements in YouTube.
+
+If you click on the icon, you’re presented with options to pause adblocking, whitelist a domain or page, block specific advertisements and more. You have all the functionality you’d expect from an adblocker in a clean overview.
+
+AdBlock is part of the Acceptable Ads Program, which Adblock Plus (reviewed further below) founded. They have a guide on how to opt out of this, being very open and upfront about it. It does not receive any money from this program and just subscribes to the whitelist, making it an acceptable way of adblocking if you agree with this philosophy. The difference with Adblock Plus is that there's no monetary incentive in it for them, only an ideological one.
+
+For people who want to be more moderate about adblocking, this may not be the best option. It allows you to block additional ads on websites, but doesn’t provide an option to only block ads you specify. You can’t whitelist a website and then block only specific ads. Overall, Adblock is a tried and tested product and has been for a long time, so it’s a good option for anyone wanting to block ads and not minding some being whitelisted.
+
 ### Just have it: Privacy Badger
 
 **Browsers**: Chrome, Firefox, Opera
-**Website:** <a href="https://www.eff.org/privacybadger" target="_blank">Eff.com/privacybadger</a>
+**Website:** <a href="https://www.eff.org/privacybadger" target="_blank">EFF.com/privacybadger</a>
 
 <figure class="imgright">
     <img src="adblocking6.png" alt="Privacy Badger interface">
     <figcaption>The sliders go to red or yellow automatically and can be adjusted manually</figcaption>
 </figure>
 
-Privacy Badger isn't an adblocker. It works different from most in that it automatically recognises and blocks domains that are tracking you. This will include a lot of advertisements, but that's not its primary goal. **It’s a great tool have in addition to your adblocker.**
+Privacy Badger isn't an adblocker. It works different from most in that it automatically recognises and blocks domains that are tracking you. This will include a lot of advertisements, but that's not its primary goal. **It’s a great tool to run in the background with any adblocker.**
 
 In the start, all options are set to be allowed. When the badger suspects a domain is tracking you, it does one of two things: it blocks the cookies from that domain or it blocks the domain entirely. It only blocks the domain entirely if it's convinced that doing so will not break the website you're visiting.
 
@@ -152,7 +181,7 @@ Adblock Plus (ABP) is the most downloaded adblocker around. It tried some new th
 
 It didn't gain much traction, but ever since ABP has been focused allowing nonintrusive ads. They do this by whitelisting ads they deem acceptable, marking everything else unacceptable by default and blocking it.
 
-ABP has been a source of controversy because of its whitelisting practices. This originated when they allowed companies to pay a fee to be whitelisted. This money went directly to ABP and was nothing more than a bribe to bypass the world\'s most popular adblocker.
+ABP has been a source of controversy because of its whitelisting practices. This originated when they allowed companies to pay a fee to be whitelisted. This money went directly to ABP and was nothing more than a bribe to bypass the world's most popular adblocker.
 
 Functionality aside, I fundamentally disagree with their approach to adblocking. Instead of taking the approach of blocking intrusive advertisements, they whitelist some and try to exploit their popularity to earn money. This, in my eyes, is a contradictory business model and the reason why I cannot endorse the use of ABP to anyone.
 
